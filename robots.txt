@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fdt-digital.com/sitemap.xml
