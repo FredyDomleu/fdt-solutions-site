@@ -13,3 +13,8 @@ document.getElementById('quote-form')?.addEventListener('submit',e=>{e.preventDe
   'Service: '+f.get('service'),'',
   'Project details:',f.get('message')
 ];const subject='Quote request - '+f.get('service')+' - '+f.get('name');window.location.href='mailto:info@fdt-digital.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'));});
+window.googleTranslateElementInit=function(){
+  if(window.google&&google.translate){
+    new google.translate.TranslateElement({pageLanguage:'en',autoDisplay:false},'google_translate_element');
+  }
+};
